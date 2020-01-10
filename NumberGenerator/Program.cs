@@ -12,12 +12,9 @@ namespace NumberGenerator
         static void Main(string[] args)
         {
             Random num = new Random();
-            int min;
-            int max;
             int skip = 0;
-            int k = 0;
+            int haveYouBeenWrong = 0;
             int skips = 0;
-            int number;
             char decider;
             bool wrong = true;
             bool wrongAgain = true;
@@ -27,7 +24,7 @@ namespace NumberGenerator
             bool secondHasRunMore = false;
 
             Console.WriteLine("How many numbers do you want to generate? ");
-            number = Convert.ToInt32(Console.ReadLine());
+            int number = Convert.ToInt32(Console.ReadLine());
             if (number < 1)
             {
                 Console.WriteLine("Why fork you, why'd you use a number generator if you don't want to create any numbers?");
@@ -36,10 +33,10 @@ namespace NumberGenerator
             }
 
             Console.WriteLine("Write the minimum number: ");
-            min = Convert.ToInt32(Console.ReadLine());
+            int min = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Write the maximum number: ");
-            max = Convert.ToInt32(Console.ReadLine());
+            int max = Convert.ToInt32(Console.ReadLine());
 
             while (wrong)
             {
@@ -63,7 +60,7 @@ namespace NumberGenerator
                     Console.WriteLine("great.. extra work..");
                     while (wrongAgain)
                     {
-                        k = 0;
+                        haveYouBeenWrong = 0;
                         if (secondHasRun == true)
                         {
                             Console.WriteLine("say no, say no, say no.. Okay you get a do over, skip multiple numbers or no? Y: yes N: no");
@@ -83,7 +80,6 @@ namespace NumberGenerator
                             Console.WriteLine("God dammit, i hate you! \r\n " +
                             "Well then, bevare this might be a long journey");
 
-                            skips = Convert.ToInt32(Console.ReadLine());
                             wrongAgain = false;
                         }
                         else if (decider == 'N' || decider == 'n')
@@ -95,24 +91,24 @@ namespace NumberGenerator
                         }
                         else
                         {
-                            k++;
+                            haveYouBeenWrong++;
                             if (hasRun == true)
                             {
                                 Console.WriteLine("Okay, i'm not sure whether or not you are completely stupid but erh... We'll try again");
-                                k++;
+                                haveYouBeenWrong++;
                             }
                             else if (hasRunMore == true)
                             {
                                 Console.WriteLine("Okay i'm sure of it now, ya stupid! you can do this..");
-                                k++;
+                                haveYouBeenWrong++;
                             }
                             else
                             {
                                 Console.WriteLine("you've been through this before, and yet you've failed.. I am so disapointed in you.");
-                                k++;
+                                haveYouBeenWrong++;
                             }
 
-                            if (k <= 3)
+                            if (haveYouBeenWrong <= 3)
                             {
                                 secondHasRun = true;
                             }
@@ -134,11 +130,11 @@ namespace NumberGenerator
                 else
                 {
                     Console.WriteLine("Well this is awkward... for you.. You wrote " + decider + " You needed to write Y for yes or N for no..");
-                    k++;
-                    if (k <= 3)
+                    haveYouBeenWrong++;
+                    if (haveYouBeenWrong <= 3)
                     {
                         hasRun = true;
-                        k++;
+                        haveYouBeenWrong++;
                     }
                     else
                     {

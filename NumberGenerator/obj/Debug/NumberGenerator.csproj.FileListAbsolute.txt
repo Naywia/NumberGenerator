@@ -4,3 +4,10 @@ C:\Users\Naywia\source\repos\NumberGenerator\NumberGenerator\bin\Debug\NumberGen
 C:\Users\Naywia\source\repos\NumberGenerator\NumberGenerator\obj\Debug\NumberGenerator.csprojAssemblyReference.cache
 C:\Users\Naywia\source\repos\NumberGenerator\NumberGenerator\obj\Debug\NumberGenerator.exe
 C:\Users\Naywia\source\repos\NumberGenerator\NumberGenerator\obj\Debug\NumberGenerator.pdb
+C:\Users\maya\source\repos\NumberGenerator\NumberGenerator\bin\Debug\NumberGenerator.exe.config
+C:\Users\maya\source\repos\NumberGenerator\NumberGenerator\bin\Debug\NumberGenerator.exe
+C:\Users\maya\source\repos\NumberGenerator\NumberGenerator\bin\Debug\NumberGenerator.pdb
+C:\Users\maya\source\repos\NumberGenerator\NumberGenerator\obj\Debug\NumberGenerator.csproj.AssemblyReference.cache
+C:\Users\maya\source\repos\NumberGenerator\NumberGenerator\obj\Debug\NumberGenerator.csproj.CoreCompileInputs.cache
+C:\Users\maya\source\repos\NumberGenerator\NumberGenerator\obj\Debug\NumberGenerator.exe
+C:\Users\maya\source\repos\NumberGenerator\NumberGenerator\obj\Debug\NumberGenerator.pdb
